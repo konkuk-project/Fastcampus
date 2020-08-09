@@ -1,0 +1,1047 @@
+
+/* all */
+#body__container {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 50px;
+    position: relative;
+    
+}
+
+a {
+    text-decoration: none;
+    color : #424242;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.clearfix::after {
+    content : "";
+    clear : both;
+    display: block;
+}
+
+.float--left {
+    float : left;
+}
+
+.float--right {
+    float : right;
+}
+
+
+
+/* section */
+#toggle-btn {
+    display: none;
+}
+
+.section {  
+    width: 100%;
+}
+
+.section:nth-child(n+3) {
+    margin-top: 100px;
+}
+
+.section .inner--nav {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background: #fff;
+    /* border-bottom: 1px solid rgba(0,0,0,.25);
+    box-shadow: 0 0 5px rgba(0,0,0,.75); */
+    position: fixed;
+    z-index: 999;   
+}
+
+header .inner--nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+header .inner--nav .logo--content {
+    display: flex;
+    height: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.section .inner--nav .logo {
+    display: block;
+    width: 30px;
+    height: 20px;
+    background: url("https://storage.googleapis.com/static.fastcampus.co.kr/prod/assets/favicon/favicon-32x32.png?3bbd0f8da8c16ded0b7e9ea2ce5087c2") no-repeat;
+    background-size: contain;
+    justify-items: center;
+}
+
+.section .inner--nav .logo--title {
+    width: 120px;
+    font-weight: 700;
+}
+
+.section .inner--nav .menu--container {
+    display: block;
+    width: 100%;
+    
+}
+
+.section .inner--nav .menu {
+    display: inline-flex;
+    
+}
+
+.section .inner--nav .menu > li {
+    
+    position: relative;
+}
+
+.section .inner--nav .menu > li > a {
+    margin-right: 25px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    word-break: keep-all;
+}
+
+.section .inner--nav .menu > li ul {
+    position: absolute;
+    top: 100%;
+    left : -75px;
+    visibility: hidden;
+}
+
+.section .inner--nav .menu > li a:hover {
+    color : #ed234b;
+    font-weight: 700;
+}
+
+.section .inner--nav .menu > li:hover ul {
+    visibility: visible;
+}
+
+.section .inner--nav .menu > li ul li {
+    position: relative;
+    width: 220px;
+    height: 40px;
+    background: #424242;
+    border: 1px solid #262626;
+    
+}
+
+.section .inner--nav .menu > li ul li:hover {
+    background: #ed234b;
+}
+
+.section .inner--nav .menu > li ul li a {
+    position: absolute;
+    display: block;
+    color : #ccced2;
+    font-size: 11px;
+    font-weight: 500;
+    top: 40%;
+    left: 10%;
+
+}
+
+.section .inner--nav .menu > li ul li:hover a {
+    color : #fff;
+    font-weight: 700;
+}
+
+/* section visual */
+
+  
+.slide {
+
+    position: relative;
+    overflow: hidden;
+}
+
+.slide .panel {
+    width: 400%;
+}
+
+.slide .panel:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slide .panel>li {
+    width: 25%;
+    height: 400px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.slide .panel>li img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.slide .dot:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slide .dot-pos {
+    position: absolute;
+    top: 350px;
+    left: 160px;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1150px;
+    height: 400px;
+}
+
+.slide .dot-pos .dot {
+    position: absolute;
+
+}
+
+.slide .dot>li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.slide .dot>li.on {
+    width: 44px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+.slide ul li .image--title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.slide ul li .image--title h3 {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    color : #fff;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.slide ul li .image--title p {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    color : #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+/* section feature common */
+
+.section .inner--main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section--feature p {
+    margin-bottom: 10px;
+}
+
+.section--feature p span {
+    font-size: 14px;
+    font-weight: 500;
+    color : #fff;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #fff;
+    background: tomato;
+    border-radius: 5px;
+}
+
+.section--feature .item .description p {
+    position: relative;
+}
+
+.section--feature .item .description p span:nth-child(1) {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color : #424242;
+    background: none;
+    padding: 0;
+    border: none;
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+}
+
+.section--feature .item .description span:nth-child(n+2) {
+    font-size: 13px;
+    font-weight: 700;
+    color : #fff;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #fff;
+    background: red;
+    border-radius: 5px;
+}
+
+.section--feature .item:nth-child(1) .description span:nth-child(2) {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+.section--feature .item:nth-child(1) .description span:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 72px;
+}
+
+.section--feature .item:nth-child(1) .description span:nth-child(4) {
+    position: absolute;
+    top: 65px;
+    left: 134px;
+}
+
+.section--feature .item:nth-child(2) .description span:nth-child(2) {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+.section--feature .item:nth-child(2) .description span:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 120px;
+}
+
+.section--feature .item:nth-child(2) .description span:nth-child(4) {
+    position: absolute;
+    top: 65px;
+    left: 195px;
+}
+
+.section--feature .item:nth-child(3) .description span:nth-child(2) {
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+.section--feature .item:nth-child(3) .description span:nth-child(3) {
+    position: absolute;
+    top: 65px;
+    left: 85px;
+}
+
+.section--feature .item p span {
+    font-size: 14px;
+    font-weight: 500;
+    color : #424242;
+    background: none;
+    padding: 0;
+    border: none;
+}
+
+.section--feature .class .image {
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.section--feature .class--bestselling .class .item p {
+    height: 100px;
+    display: block;
+    background: #f2f3f5;
+
+}
+
+.section--feature .class .item {
+    position: relative;
+}
+
+.section--feature .class .item p {
+    height: 75px;
+    display: block;
+    background: #f2f3f5;
+    border: 1px solid #fff;
+    border-top : none;
+    border-radius: 0 0 10px 10px;
+}
+
+.section--feature ul:nth-child(n+2) .item p {
+    position: relative;
+    
+}
+
+/* 버튼 */
+
+.section--feature ul:nth-child(n+2) p span:first-child {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    
+}
+
+.section--feature ul:nth-child(n+2) p span:last-child {
+    position: absolute;
+    top: 45px;
+    left: 8px;
+    font-size: 12px;
+    color : #fff;
+    padding: 5px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: plum;
+}
+
+/* class bestselling */
+
+.section--feature .class--bestselling .class {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.section--feature .class--bestselling li {
+    margin-right: 25px;
+    position: relative;
+    height: 350px;
+}
+
+.section--feature .class--bestselling li:nth-child(1) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/201909/183659-15/mktg-online-digitmktg-1.png') no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.section--feature .class--bestselling li:nth-child(2) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202002/184719-157/bg1-2.jpg') no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--bestselling li:nth-child(3) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202004/222144-88/card-banner.jpg') no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* class online */
+
+.section--feature .class--online {
+    margin-top: 250px;
+}
+
+.section--feature .class--online .class {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 300px;
+}
+
+.section--feature .class--online li {
+    margin-right: 10px;
+}
+
+.section--feature .class--online .class li:nth-child(1) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202002/184719-157/bg1-2.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--online .class li:nth-child(2) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202002/170615-16/main01-1.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--online .class li:nth-child(3) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202002/192809-12/마케팅유치원-카드.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--online .class li:nth-child(4) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/175331-12/main-pc--1-.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.class--ad {
+    position: absolute;
+    top: 1000px;
+    width : 100%;
+    height: 120px;
+    background : url("https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202001/082546-4/banner-school-dt-2x.png") no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.class--ad .ad--title {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;           
+}
+
+.class--ad .ad--title h3 {
+    position: absolute;
+    left: 110px;
+    top: 35px;
+    color : #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    
+}
+
+.class--ad .ad--title p {
+    position: absolute;
+    left: 110px;
+    top: 70px;
+    color : #fff;
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+/* class-marketing */
+
+.section--feature .class--marketing {
+    margin-top: 50px;
+}
+
+.section--feature .class--marketing .class {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 300px;
+}
+
+.section--feature .class--marketing .class li {
+    margin-right: 10px;
+}
+
+.section--feature .class--marketing .class li:nth-child(1) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202004/155714-14/biz-online-exce-thumbnail.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--marketing .class li:nth-child(2) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/142119-16/20200325-142059.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--marketing .class li:nth-child(3) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/192553-44/card-react.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .class--marketing .class li:nth-child(4) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/101044-172/data-online-deep-2-2x.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* data science */
+
+.section--feature .data--science {
+    margin-top: 50px;
+}
+
+.section--feature .data--science .class {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 300px;
+}
+
+.section--feature .data--science .class li {
+    margin-right: 10px;
+}
+
+.section--feature .data--science .class li:nth-child(1) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202002/195003-12/실전데분-카드.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .data--science .class li:nth-child(2) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202004/142318-81/tensorflow로시작하는-딥러닝-입문-camp.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .data--science .class li:nth-child(3) .image {
+    background: url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/214800-15/shutterstock-1094373758.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.section--feature .data--science .class li:nth-child(4) .image {
+    background : url('https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202003/223507-149/main-5-1.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* footer */
+footer.section {
+    background: #424242;
+    
+}
+
+footer.section .inner--nav {
+    height: 350px;
+    display: flex;
+}
+
+footer.section .inner--nav .company--info {
+    position: relative;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+footer.section .inner--nav .company--info .content {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+footer.section .company--info h2 {
+    color : #fff;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+footer.section .inner--nav .company--info ul {
+    
+}
+
+footer.section .inner--nav .company--info ul li {
+    color : #6e6e73;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer.section .company--info ul li:nth-child(6) {
+    width: 20px;
+    height: 1px;
+    background: #6e6e73;
+    margin: 20px 0;
+
+}
+
+footer.section .company-request {
+    flex-basis: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+footer.section .company--menu {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+footer.section .company-request .company--menu h2 {
+    color : #fff;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+footer.section .company--menu ul {
+    display: flex;
+}
+
+footer.section .company--menu ul li {
+    color : #6e6e73;
+    font-size: 14px;
+    padding-right: 5px;
+    margin-right: 5px;
+    border-right: 1px solid #6e6e73;
+}
+
+footer.section .company--menu ul li:last-child {
+    border-right: none;
+}
+
+footer.section .company--user {
+    position: absolute;
+    top: 135px;
+    left: 20px;
+}
+
+footer.section  .company--user h2 {
+    color : #fff;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+footer.section  .company--user ul {
+
+}
+
+footer.section  .company--user ul li {
+    color : #6e6e73;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width : 768px) {
+
+    #body__container {
+        padding-top: 0;
+    }
+
+    header {
+        position: relative;
+        display: block;
+    }
+
+    header.section {
+        
+        
+    }
+
+    header.section .inner--nav {
+        position: relative;
+        max-width : none;
+        height: auto;
+        padding: 0 20px;
+        display: block;
+    }
+
+    header.section .inner--nav .logo--content {
+        margin-left: 0;
+        padding: 5px 0;
+    }
+
+    header.section .inner--nav .logo {
+
+    }
+
+    header.section .inner--nav .logo--title {
+        margin: 0;
+    }
+
+    header.section .inner--nav .logo--title h2 {
+       
+    }
+
+    header.section .inner--nav ul.toggle {
+        display: none;
+    }
+
+    header.section .inner--nav ul.toggle.on {
+        display: block;
+        
+    }
+
+    #toggle-btn {
+        display: block;
+        background: url("../img/toggle-btn.svg");
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        top: 20px;
+        right: 20px;
+        text-indent: -9999px;
+    }
+
+    header.section .inner--nav .menu {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header.section .inner--nav .menu::after {
+
+    }
+
+    header.section .inner--nav .menu > li {
+        
+        border-top: 1px solid rgba(0,0,0,.25);
+        margin: 0;
+    }
+
+    header.section .inner--nav .menu li:last-child {
+        border-bottom: 1px solid rgba(0,0,0,.25);
+    }
+
+    .section .inner--nav .menu > li > a {
+        height: auto;
+        line-height: 40px;
+    }
+
+    header.section .inner--nav .menu li ul {
+        display: none;
+    }
+
+    .section--visual {
+        display: block;
+        padding-top: 20px;
+        
+    }
+
+    .section--visual .main--image {
+        height: 250px;
+        
+    }
+
+    .section--visual .main--image .image--title h3 {
+        top: 40px;
+        left: 80px;
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .section--visual .main--image .image--title p {
+        top: 175px;
+        left: 80px;
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+
+    .class--ad {
+        position: relative;
+        top: 10px;
+        background-position: right;
+    }
+
+    .class--ad .ad--title {
+        max-width: none;
+    }
+
+    .class--ad .ad--title h3 {
+
+    }
+
+    .class--ad .ad--title p {
+
+    }
+
+    .section .inner--main {
+        max-width: none;
+    }
+
+    .section:nth-child(n+3) {
+        margin-top: 50px;
+    }
+
+    .section--feature p {
+        text-align: center;
+    }
+
+    .section--feature p span {
+
+    }
+
+    .section--feature .class--bestselling .class {
+        display: block;
+        width: 90%;
+        margin : 0 5%;
+    }
+
+    .section--feature .class--bestselling .item {
+        margin-right: 0;
+        margin-bottom: 220px;
+        height: 150px;
+    }
+
+    .section--feature .class--bestselling .item .image {
+        height: 100px;
+    }
+
+    .section--feature .class--bestselling .item .description {
+        height: 50px;
+    }
+
+    .section--feature .class--online {
+        padding-top: 50px;
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .section--feature .class--online .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section--feature .class--online li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .section--feature .class--online li .image {
+
+    }
+
+    .section--feature .class--marketing {
+        padding-top: 350px;
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    .section--feature .class--marketing .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section--feature .class--marketing .class li:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    
+
+    .section--feature .class--marketing .class li .image {
+
+    }
+
+    .section--feature .data--science {
+        width: 90%;
+        margin: 0 5%;
+        padding: 350px 0 300px 0;
+        
+    }
+
+    .section--feature .data--science .class {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section--feature .data--science .class li:nth-child(2n)  {
+        margin-right: 0;
+    }
+
+    .section--feature .data--science .class li .image {
+
+    }
+
+    footer.section {
+        
+    }
+
+    footer.section .inner--nav {
+        
+    }
+
+    footer.section .inner--nav .company--info {
+
+    }
+
+    footer.section .inner--nav .company--info .content  {
+
+    }
+
+    footer.section .company--info h2 {
+
+    }
+
+    footer.section .inner--nav .company--info ul {
+
+    }
+
+    footer.section .inner--nav .company--info ul li {
+
+    }
+
+    footer.section .company-request {
+
+    }
+
+    footer.section .company--menu {
+        
+    }
+
+    footer.section .company-request .company--menu h2 {
+        margin-bottom: 15px;
+    }
+
+    footer.section .company--menu ul {
+        display: block;
+    }
+
+    footer.section .company--menu ul li {
+        border-right: none;
+        padding-bottom: 5px;
+    }
+
+    footer.section .company--user {
+        top: 210px;
+    }
+
+    footer.section  .company--user h2 {
+        margin-bottom: 15px;
+    }
+
+    footer.section  .company--user ul li:nth-child(n+3) {
+        display: none;
+    }
+
+    
+}
+
+
